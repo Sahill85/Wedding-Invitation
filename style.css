@@ -13,29 +13,20 @@ html {
   scroll-behavior: smooth;
 }
 
-/* style variables */
-:root {
-  --font1: "Outfit", sans-serif;
-  --font2: "Libre Baskerville", serif;
-  --font3: "Bebas Neue", sans-serif;
-  --primarycolor: #f1f1f1;
-  /* --secondrycolor:#f0a500; */
-  --secondrycolor: #f8b81f;
-  --headingcolor: #1ab79d;
-  --textcolor: #1f1f1f;
-}
-
 /* ===== body ===== */
 body {
   font-family: var(--font1);
-  background-color: #ffffffc7;
+  background-color: #f9afa0;
+  background-image: url(Bg/bg1.jpg);
+  background-position: 100%;
+  /* background-attachment: fixed; */
   color: var(--textcolor);
 }
 
 /* ======== home ======= */
 .home {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /*   
@@ -49,7 +40,7 @@ body {
   } */
 
 .home-headings {
-  width: 95%;
+  width: 100%;
   padding-top: 100px;
   justify-content: center;
   /* display: flex; */
@@ -59,9 +50,13 @@ body {
 }
 
 
-.home-wrapper .home-headings h1 {
-  font-family: var(--font1);
-  text-transform: uppercase;
+.home-headings .intro{
+  font-size: 20px;
+  text-align: center;
+  color: #491105;
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -69,27 +64,34 @@ body {
 /* ========== navbar ======== */
 .navbar {
   width: 100%;
-  height: 90px;
+  height: 65px;
   display: flex;
   align-items: center;
-  background-color: #010101;
-  z-index: 2;
+  background-color: #fde8e4;
+  color: #491105;
+  z-index: 2; 
   position: fixed;
 }
 
 .main-el {
-  /* font-size: 20px; */
-  color: #f1f1f1;
-  font-family: "Mea Culpa", cursive;
+  font-size: 26px;
+  font-family: "Lavishly Yours", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
+.main-el i{
+  font-size: 22px;
+  margin: 0px 5px;
+}
 
 .nav-elements p {
-  color: #f1f1f1;
-  font-family: var(--font1);
-  margin-bottom: 10px;
+  font-size: 9px;
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+  /* margin-bottom: 5px; */
+  margin-top: 10px;
+  text-align: center;
 }
 
 .navbar .nav-elements {
@@ -135,10 +137,10 @@ body {
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
   /* width: 250px; */
   color: #f1f1f1;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 
 }
 
@@ -146,12 +148,13 @@ body {
   width: 250px;
   border-radius: 10px;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+   border: #ffd4ca   5px solid ;
 }
 
 .location img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   display: block;
   transition: transform 0.5s;
 }
@@ -159,8 +162,8 @@ body {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #000000);
-  border-radius: 10px;
+  background: linear-gradient(rgba(249, 224, 224, 0.6), #f7c5ba);
+  border-radius: 5px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -173,7 +176,12 @@ body {
   text-align: center;
   font-size: 14px;
   transition: height 0.2s;
+  color: #491105;
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 .layer h3 {
   font-weight: 500;
@@ -216,17 +224,20 @@ body {
 .copyr {
   width: 100%;
   height: 50px;
-  background-color: #000000;
-  color: #f1f1f1;
+  background-color: #ffdad2d1;
+  color: #491105;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-top: 300px;
-
+  border-top: #ea8a75 1px solid;
 }
 
 .copyr p {
-  font-size: 15px;
+  font-size: 10px;
   font-family: cursive;
+}
+
+.copyr i{
+  margin-left: 5px;
 }
