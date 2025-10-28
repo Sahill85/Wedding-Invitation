@@ -74,7 +74,7 @@ body {
 }
 
 .main-el {
-  font-size: 26px;
+  font-size: 28px;
   font-family: "Lavishly Yours", cursive;
   font-weight: 400;
   font-style: normal;
@@ -85,12 +85,12 @@ body {
 }
 
 .nav-elements p {
-  font-size: 9px;
+  font-size: 10px;
   font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
   /* margin-bottom: 5px; */
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -185,12 +185,13 @@ body {
 
 .layer h3 {
   font-weight: 500;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
-
-.layer h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
+.layer .gape{
+    margin-bottom: 20px;
+}
+.layer .gap{
+  margin: 3px 0px;
 }
 
 .layer a {
@@ -215,7 +216,7 @@ body {
 }
 
 .layer a i{
-  color: #000000;
+  color: #ff3434;
 }
 
 
